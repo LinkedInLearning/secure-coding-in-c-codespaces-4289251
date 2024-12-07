@@ -7,7 +7,7 @@ int main()
 	b = -8;
 
 	if( (a=b) )
-		puts("Value assigned");
+		printf("Value %d assigned\n",b);
 	else
 		puts("Value is zero");
 

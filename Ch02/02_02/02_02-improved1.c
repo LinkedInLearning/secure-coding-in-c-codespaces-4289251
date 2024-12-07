@@ -10,7 +10,7 @@ int main()
 	   result (value of `b`) with zero */
 	/*** DO NOT USE `a==b` HERE! ***/
 	if( (a=b) != 0 )
-		puts("Value assigned");
+		printf("Value %d assigned\n",b);
 	else
 		puts("Value is zero");
 

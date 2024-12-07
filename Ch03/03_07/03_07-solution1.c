@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #define SIZE 24
+#define TAX_PERCENT 0.15
 
 int main()
 {
@@ -9,9 +10,9 @@ int main()
 	char output[SIZE];
 	char *r;
 	int a,b;
-	float winnings;
+	float revenue,tax;
 
-	printf("Enter your lotto winnings: $");
+	printf("Enter your egg revenue: $");
 
 	r = fgets(input,SIZE,stdin);
 	/* validate fgets string */
@@ -43,7 +44,7 @@ int main()
 	}
 
 	/* translate to a float */
-	winnings = strtof(output,&r);
+	revenue = strtof(output,&r);
 	if( r==output )
 	{
 		fprintf(stderr,"Invalid input\n");
@@ -51,15 +52,15 @@ int main()
 	}
 
 	/* deal with negative values */
-	if( winnings < 0 )
+	if( revenue < 0 )
 	{
-		puts("Negative winnings aren't taxed");
+		puts("Negative revenue isn't taxed");
 		exit(0);
 	}
 
 	/* display result after taxes */
-	winnings*=0.55;
-	printf("After taxes, that's $%.2f\n",winnings);
+	tax = revenue*TAX_PERCENT;
+	printf("After taxes, that's $%.2f\n",revenue-tax);
 
 	return 0;
 }
