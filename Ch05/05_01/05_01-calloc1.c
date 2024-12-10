@@ -11,7 +11,7 @@ int main()
 	if( d==NULL )
 	{
 		fprintf(stderr,"Unable to allocate memory\n");
-		return(0);
+		exit(1);
 	}
 
 	/* output the buffer */

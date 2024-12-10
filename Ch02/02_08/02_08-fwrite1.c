@@ -12,7 +12,7 @@ int main()
 	if( fp==NULL )
 	{
 		fprintf(stderr,"Unable to create %s\n",filename);
-		return(1);
+		return 1;
 	}
 
 	/* write 10 bytes to the file */
@@ -21,7 +21,7 @@ int main()
 	{
 		fprintf(stderr,"Wrote only %d bytes to %s\n",r,filename);
 		fclose(fp);
-		return(1);
+		return 1;
 	}
 	printf("Wrote %d bytes to %s\n",r,filename);
 
@@ -30,8 +30,8 @@ int main()
 	if( r != 0 )
 	{
 		perror("Unable to close file\n");
-		return(1);
+		return 1;
 	}
 
-	return(0);
+	return 0;
 }

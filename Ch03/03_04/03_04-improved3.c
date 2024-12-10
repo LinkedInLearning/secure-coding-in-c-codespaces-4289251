@@ -26,5 +26,5 @@ int main()
 
 	printf("Hello, %s\n",buffer);
 
-	return(0);
+	return 0;
 }

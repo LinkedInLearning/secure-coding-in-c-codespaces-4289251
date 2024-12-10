@@ -21,6 +21,6 @@ int main()
 	printf("The alphabet: %s\n",alphabet);
 
 	/* clean-up */
-	free(aphabet);
+	free(alphabet);
 	return 0;
 }

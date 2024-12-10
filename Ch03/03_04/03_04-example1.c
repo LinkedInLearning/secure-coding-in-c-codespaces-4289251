@@ -8,5 +8,5 @@ int main()
 	gets(buffer);
 	printf("Hello, %s\n",buffer);
 
-	return(0);
+	return 0;
 }

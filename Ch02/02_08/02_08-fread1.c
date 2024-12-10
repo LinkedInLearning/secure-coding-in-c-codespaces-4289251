@@ -33,8 +33,8 @@ int main()
 	if( r != 0 )
 	{
 		perror("Unable to close file\n");
-		return(1);
+		return 1;
 	}
 
-	return(0);
+	return 0;
 }

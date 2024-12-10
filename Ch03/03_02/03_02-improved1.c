@@ -5,7 +5,7 @@ int main()
 {
 	char input[16];
 	char *p;
-	int a;
+	long a;
 
 	printf("Type an integer: ");
 	fgets(input,16,stdin);
@@ -13,7 +13,7 @@ int main()
 	if( p==input )
 		puts("Invalid input");
 	else
-		printf("Double %d is %d\n",a,a+a);
+		printf("Double %ld is %ld\n",a,a+a);
 
 	return(0);
 }
