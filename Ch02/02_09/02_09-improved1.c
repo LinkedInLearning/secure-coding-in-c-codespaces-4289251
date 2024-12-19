@@ -35,7 +35,7 @@ int main()
 				else
 				{
 					/* error occurred */
-					perror("File error in %s\n",filename);
+					fprintf(stderr,"File error in %s\n",filename);
 					exit(1);
 				}
 			}
