@@ -7,5 +7,5 @@ int main()
 	printf("%s",prompt);
 	getchar();
 
-	return(0);
+	return 0;
 }

@@ -43,15 +43,15 @@ int main()
 	/* validate */
 	if( strcmp(input,pin)==0 )
 	{
-		/* if available, use memset_s() */
-		memset(input,'\0',SIZE);
-		memset(pin,'\0',SIZE);
 		puts("Access granted");
 	}
 	else
 	{
 		puts("Intruder alert!");
 	}
+	/* zero out buffers */
+	memset(input,'\0',SIZE);
+	memset(pin,'\0',SIZE);
 
 	return(0);
 }

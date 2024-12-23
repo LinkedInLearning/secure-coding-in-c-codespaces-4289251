@@ -34,7 +34,7 @@ int main()
 	/* confirm code is SIZE-1 (5) characters */
 	if( strlen(code) < SIZE-1 )
 	{
-		printf("Code must be at leats %d characters long\n",SIZE-1);
+		printf("Code must be at least %d characters long\n",SIZE-1);
 		exit(1);
 	}
 

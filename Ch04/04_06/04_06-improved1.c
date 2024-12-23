@@ -43,17 +43,17 @@ int main()
 	/* validate */
 	if( strcmp(input,pin)==0 )
 	{
-		/* zero out pint and input */
-		for( x=0; x<SIZE; x++)
-		{
-			input[x] = '\0';
-			pin[x] = '\0';
-		}
 		puts("Access granted");
 	}
 	else
 	{
 		puts("Intruder alert!");
+	}
+	/* zero out buffers */
+	for( x=0; x<SIZE; x++)
+	{
+		input[x] = '\0';
+		pin[x] = '\0';
 	}
 
 	return(0);
